@@ -1,0 +1,296 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body{
+    background-image: url(../galeri/bg2.webp);
+}
+
+.container {
+    width: 1000px;
+    margin: 50px auto;
+    background-color: white;
+    position: relative;
+}
+
+.topbar {
+    width: 100%;
+    height:50px;
+    background-color: navy;
+    top: 0;
+    right: 0;
+    left: 0;
+    position: fixed;
+    z-index: 9999;
+}
+
+.twit {
+    width: 200px;
+    height: 200px;
+    background-image: url(../galeri/twit.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    text-indent: -99999999px;
+    top : -25px;
+    right: -25px;
+}
+
+.container .header {
+    padding: 30px;
+}
+
+.header h1 {
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+.header ul li {
+    display: inline-block;
+    padding-top: 20px;
+    margin-right: 30px;
+    
+}
+
+.header ul li a{
+    text-decoration: none;
+    color: brown;
+    font-weight: bold;
+
+}
+
+.header ul li a:hover{
+    background-color: navy;
+        color: white;
+}
+
+.hero {
+    height: 400px;
+    background-position:200x;
+    background-repeat: no-repeat;
+    background-image: url(../galeri/latihan.png);
+}
+
+.main {
+    width: 650px;
+    padding: 20px;
+    box-sizing: border-box;
+    float: left;
+}
+
+
+.konten{
+    padding: 20px;
+    margin-top: 30px;
+    
+}
+
+.konten .main h3 {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.konten .main h4{
+    font-size: 15px;
+}
+
+.penulis a{
+    text-decoration: none;
+    color: brown;
+}
+
+.penulis a:hover{
+    background-color: navy;
+    color: white;
+}
+
+.konten p {
+    margin-top: 20px;
+    text-align: justify;
+}
+
+.sidebar {
+    margin-top: 20px;
+    margin-left: 20px;
+    
+}
+
+.sidebar h3 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.sidebar img{
+    margin-top: 30px;
+    float: left;
+    padding-right: 20px;
+}
+.sidebar p{
+    text-align: justify;
+}
+
+.footer {
+    width: 100%;
+    height: 50px;
+    background-color: navy;
+}
+
+.footer .copy {
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    line-height: 50px;
+}
+
+.cf:before,
+.cf:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}

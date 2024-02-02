@@ -1,0 +1,35 @@
+/* .navbar {
+    background-color: lightgreen;
+}
+
+.main {
+    background-color: greenyellow;
+   
+}
+
+.main span {
+    background-color:red;
+} */
+
+/* a {
+    background-color: goldenrod;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+} */
+
+/* h1,h2, p {
+    background-color: blue;
+} */
+
+/* .main {
+    background-color: lightcyan;
+}
+
+.main h2 {
+    background-color: khaki;
+} */
+
+.navbar li {
+    display: inline-block;
+}

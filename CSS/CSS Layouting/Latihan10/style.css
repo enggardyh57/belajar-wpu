@@ -1,0 +1,26 @@
+div{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+
+.satu {
+    background-color: red;
+    top: 50px;
+    left: 50px;
+    z-index: 2;
+}
+
+.dua {
+    background-color: yellow;
+    top: 100px;
+    left: 100px;
+}
+
+.tiga{
+    background-color: green;
+    top: 150px;
+    left: 150px;
+    z-index: -99999;
+    
+}

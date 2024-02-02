@@ -1,0 +1,22 @@
+div {
+    width: 450px;
+    height: 450px;
+    background-color: blue;
+    /* border-radius: 20px; */
+    border-radius: 50%;
+    /* border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%; */
+    /* border-radius: 0 50% 50% 50%; */
+    text-align: center;
+    line-height: 450px;
+    /* background-image: url(../galeri/profil.png);
+    background-size: cover;
+    background-repeat: no-repeat; */
+    overflow: hidden;
+}
+
+img {
+    width: 450px;
+    height: 450px;
+    
+}

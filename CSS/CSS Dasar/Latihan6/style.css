@@ -1,0 +1,39 @@
+h3 .halo:link {
+    color: orange;
+}
+
+h3 .halo:hover{
+    color: green;
+    font-size: 50px;
+}
+
+h3 .halo:active {
+    color: blue;
+}
+
+h3 .halo:visited {
+    color: yellow;
+}
+
+li:first-child a{
+    font-size: 30px;
+}
+
+li:last-child a {
+    color: khaki;
+}
+
+li:nth-child(3n) a {
+    font-size: 40px;
+    /* even(genap) odd(ganjil) */
+}
+
+/* p tidak bisa make child-child */
+
+p:first-of-type{
+    color: blueviolet;
+}
+
+p:last-of-type{
+    color: crimson;
+}

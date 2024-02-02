@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="widtd=device-widtd, initial-scale=1.0">
+    <title>Latihan membuat Form</title>
+</head>
+
+<body>
+    <center>
+    <h3>Form Input Data Diri</h3>
+    <form>
+        <table border="1" cellspacing="0" cellpadding="5">
+            <tr>
+                <td><label for="nama">Nama Lengkap</label></td>
+                <td><label for="nama"> :</label></td>
+                <td><input type="text" id="nama"></td>
+            </tr>
+
+            <tr>
+                <td><label for="username">Username</label></td>
+                <td><label for="username">:</label></td>
+                <td><input type="text" id="username"></td>
+            </tr>
+
+            <tr>
+                <td><label for="password">Password</label></td>
+                <td><label for="password">:</label></td>
+                <td><input type="password" id="password"></td>
+            </tr>
+
+            <tr>
+                <td><label for="jenis_kel">Jenis Kelamin</label></td>
+                <td><label for="jenis_kel">:</label></td>
+                <td><input type="radio" id="perempuan" name="jenis_kel"><label for="perempuan">Perempuan</label></td>
+                <td><input type="radio" id="laki-laki" name="jenis_kel"><label for="laki-laki">Laki-laki</label></td>
+            </tr>
+
+            <tr>
+                <td><label for="hobi">Hobi</label></td>
+                <td><label for="hobi">:</label></td>
+                <td><input type="checkbox" name="hobi" id="hobi">Membaca</td>
+                <td><input type="checkbox" name="hobi" id="hobi">Musik</td>
+                <td><input type="checkbox" name="hobi" id="hobi">Olahraga</td>
+            </tr>
+            <tr>
+                <td><label for="domisili">Domisili</label></td>
+                <td><label for="domisili">:</label></td>
+                <td><select name="domisili" id="domisili">
+                    <option id="domisili">Bandung</option>
+                    <option id="domisili">Jakarta</option>
+                    <option id="domisili">Bekasi</option>
+                </select></td>
+            </tr>
+
+            <tr>
+                <td><label for="kesan">Kesan dan Pesan</label></td>
+                <td><label for="kesan">:</label></td>
+                <td><textarea name="kesan" id="kesan" cols="50" rows="10"></textarea></td>
+            </tr>
+
+            <tr>
+                <th colspan="5" >
+                <button type="button">Kirim</button>
+                </th>
+            </tr>
+            <br>
+            <tr>
+                <th colspan="5">
+                    <button type="reset">Reset</button>
+                </th>
+            </tr>
+
+        </table>
+        </center>
+    </form>
+</body>
+
+</html>

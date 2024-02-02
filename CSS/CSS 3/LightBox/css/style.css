@@ -1,0 +1,192 @@
+/*Instal Fonts*/
+
+@font-face {
+	font-family: 'Arial Narrow';
+	src: url(../LightBox/fonts/BebasNeue-Regular.woff),format(woff);
+}
+
+/*Body*/
+body{
+	font: 28px/56px 'Arial Narrow';
+	background-color: C7C2B4;
+}
+
+
+h1 {
+	font-size: 80px;
+	text-align: center;
+	margin-top: 40px;
+	font-weight: bold;
+	text-shadow: 2px 2px 1px rgba(206, 205, 200,100);
+
+}
+
+.container{
+	width: 600px;
+	background-color:#E3E3E3;
+	margin: 60px auto;
+	padding: 20px;
+	border-radius: 10px;
+
+}
+
+.galeri li{
+	display: block;
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+/*	overflow: hidden;*/
+	border: 5px solid black;
+	position: relative;
+	float: left;
+	margin-right: 20px;
+}
+
+.galeri li a img{
+	border-radius: 50%;
+
+}
+
+.galeri li span {
+	display: block;
+	width: 120px;
+	height: 120px;
+	overflow: hidden;
+	border-radius: 50%;
+	top: 0;
+	position: absolute;
+	color: black;
+	background-color: rgba(163, 163, 161,.7);
+	text-align: center;
+	line-height: 120px;
+	text-shadow: 1px 1px 1px white;
+	opacity: 0;
+	transition: .3s;
+}
+
+.galeri li a:hover span{
+	opacity: 1;
+	transform: rotate(360deg);
+
+}
+
+.clear{
+	clear: both;
+}
+
+
+
+/*Overlay*/
+
+.overlay {
+	width: 0;
+	height: 0;
+	position: fixed;
+	top:0;
+	left: 0;
+	background-color: rgba(0, 0, 0,0);
+	z-index: 9999;
+	transition: 1s;
+	text-align: center;
+	padding: 100px 0;
+	overflow: hidden;
+
+}
+
+.overlay:target {
+	width: auto;
+	height: auto;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, .7);
+}
+
+.overlay img{
+	max-height: 100%;
+	-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+	border-radius: 20px;
+}
+
+.overlay .close{
+	position: absolute;
+	top: 40px;
+	left: 50%;
+	margin-left: -40px;
+	color: white;
+	background-color: black;
+	border: 1px solid white;
+	line-height: 20px;
+	padding: 5px;
+	text-decoration: none;
+	opacity: 0;
+}
+
+.overlay:target img{
+	animation: kecilBesar 1s;
+}
+
+
+.overlay:target .close{
+	animation: hilangMuncul .5s .5s forwards;
+}
+
+.overlay:target .right,
+.overlay:target .left{
+	animation: kananKiri .5s .5s forwards;
+}
+
+
+.right{
+	width: 90px;
+	height: 90px;
+	background-image: url(../galeri/nav/right.png);
+	position: absolute;
+	top: 40%;
+	margin-left: 200px;
+	opacity: 0;
+}
+
+.left{
+	width: 90px;
+	height: 90px;
+	background-image: url(../galeri/nav/left.png);
+	position: absolute;
+	top: 40%;
+	margin-left: -300px;
+	opacity: 0;
+}
+
+@keyframes kananKiri{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+
+@keyframes kecilBesar{
+	0%{
+		opacity: 0;
+		transform: scale(0);
+	}
+
+	100%{
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
+@keyframes hilangMuncul{
+	0% {
+		margin-top: -22;
+		opacity: 0;
+	}
+
+	100%{
+		margin-top: 0;
+		opacity: 1;
+	}
+}

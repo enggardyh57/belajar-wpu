@@ -1,0 +1,16 @@
+.satu  {
+    color: green;
+}
+
+p {
+    color: red;
+}
+
+
+ul#sarapan li{
+    color: gold;
+}
+
+ul#sarapan li.fav {
+    color: navy;
+}

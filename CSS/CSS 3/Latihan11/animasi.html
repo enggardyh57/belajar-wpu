@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Animasi CSS</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .kotak{
+            width: 200px;
+            height: 200px;
+            background-color: green;
+            /* transition: 2s; */
+            /* animation: kotakanimasi 2s ease infinite alternate forwards; */
+            animation-name: kotakanimasi;
+            animation-duration: 2s;
+            animation-delay: ease;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-fill-mode: forwards;
+            animation-play-state: running;
+        }
+
+        .kotak:hover{
+            /* width: 600px; */
+            
+        }
+
+        @keyframes kotakanimasi {
+            0%{
+                width: 200px;
+            }
+            50% {
+                width: 600px;
+                height: 200px;
+            }
+
+            100%{
+                width: 600px;
+                height: 500px;
+
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="kotak"></div>
+</body>
+</html>

@@ -1,0 +1,18 @@
+h1 {
+    font-size: 30px;
+    color:#FF8C00;
+    text-align: center;
+    text-decoration: line-through;
+    text-transform: uppercase;
+
+    
+}
+
+p {
+    text-align: justify;
+    text-indent: 50px;
+    /* letter spacing = jarak antar huruf */
+    /* Word spacing = jarak antar kalimat */
+        
+    
+}

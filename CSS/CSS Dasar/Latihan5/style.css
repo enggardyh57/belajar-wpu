@@ -1,0 +1,23 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h1,h2 {
+    color: red;
+}
+
+ul li  a{
+    color: orange;
+}
+
+ol li a {
+    color: green;
+}
+
+.satu {
+    color: brown;
+}
+
+#dua {
+    color: blue;
+}

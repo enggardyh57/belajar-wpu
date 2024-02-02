@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Transisi CSS</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 900px;
+            margin: 50px auto;
+            border: 3px solid black;
+        }
+
+        .kotak{
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            line-height: 100px;
+            color: white;
+            background-color: green;
+            
+            margin: 20px;
+        }
+        /* .kotak1{ transition: all 2s ease;} */
+        .kotak1{
+            transition: marginleft 3s,transform 3s 2s, background-color 500ms 3s;
+        }
+        /* .kotak2{ transition: all 2s ease-in;}
+        .kotak3{ transition: all 2s ease-out;}
+        .kotak4{ transition: all 2s linear;}
+        .kotak5{ transition: all 2s cubic-bezier(0, 0.83, 0.98, 0.3);}
+             */
+
+
+        .container:hover .kotak {
+            transform: rotate(780deg);
+            margin-left: 800px;
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="kotak kotak1">satu</div>
+        <!-- <div class="kotak kotak2">dua</div>
+        <div class="kotak kotak3">tiga</div>
+        <div class="kotak kotak4">empat</div>
+         <div class="kotak kotak5">lima</div> -->
+    </div>
+</body>
+
+</html>

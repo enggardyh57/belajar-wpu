@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Bentuk Border Radius</title>
+    <style>
+        .satu,.dua,.tiga,.empat,.lima, .enam{
+            display: inline-block;
+            float: left;
+            margin: 20px;
+        }
+        .satu {
+            width: 100px;
+            height: 100px;
+            border: 10px solid grey;
+        }
+
+        .dua {
+            width: 100px;
+            height: 100px;
+            border: 10px solid red;
+            border-radius: 50% 0 50% 0;
+        }
+
+        .tiga{
+            width: 100px;
+            height: 100px;
+            border: 10px solid green;
+            border-radius: 50%;
+        }
+        .empat {
+            width: 100px;
+            height: 50px;
+            border: 10px solid blue;
+            border-radius: 100px 100px  0 0 ;
+        }
+
+        .lima {
+            width: 100px;
+            height: 50px;
+            margin-top: 90px;
+            border: 10px solid blue;
+            border-radius: 0 0 100px 100px ;
+        }
+        .enam {
+            
+            width: 100px;
+            height: 100px;
+            border: 10px solid orange;
+            border-radius: 0 50% 50% 0;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="satu"></div>
+    <div class="dua"></div>
+    <div class="tiga"></div>
+    <div class="empat"></div>
+    <div class="lima"></div>
+    <div class="enam"></div>
+</body>
+</html>

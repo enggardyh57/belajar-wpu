@@ -1,0 +1,24 @@
+/* div {
+    width: 50%;
+    height: 200px;
+    background-color: aquamarine;
+} */
+
+/* .satu {
+    width:200px;
+    height: 200px;
+    background-color: lightgreen;
+}
+
+.dua {
+    width: 100%;
+    background-color: lightcoral;
+} */
+
+.konten {
+    width: 200px;
+    height: 100px;
+    background-color:lightskyblue;
+    overflow: auto;
+    /* overflow : auto,visible,hidden,scroll */
+}

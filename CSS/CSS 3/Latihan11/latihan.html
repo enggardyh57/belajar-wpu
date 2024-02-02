@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Animasi CSS</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .kotak{
+            width: 100px;
+            height: 100px;
+            background-color: #4b354d;
+            position: relative;
+            /* animation: kotak1 2s ease; */
+            animation: kotakLatihan 4s infinite;
+           
+        }
+        @keyframes kotakLatihan{
+            0%{
+                top: 0;
+                left: 0;
+            }
+            20%{
+                top: 0;
+                left: 1000px;
+                background-color: #6c3f70;
+            }
+            40%{
+                top: 500px;
+                left: 1000px;
+                background-color: #a048a8;
+            }
+
+            60%{
+                top: 500px;
+                left: 700px;
+                background-color: #ae42b8;
+            }
+            80%
+            {
+                top: 300px;
+                left: 700px;
+                background-color: #cc5ed6;
+            }
+            100%{
+                top: 300px;
+                left: 300px;
+                background-color: #ed98f5;
+            }
+        
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="kotak"></div>
+</body>
+</html>

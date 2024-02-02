@@ -1,0 +1,6 @@
+body{
+    background-color: grey;
+    background-image: url(./foto/1.png);
+   background-repeat: repeat-x;
+   background-position: bottom;
+}
