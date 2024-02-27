@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tantangan Float</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            color: white;
+            text-align: center;
+            
+        }
+
+        .container{
+            border: 3px solid black;
+            margin: 50px auto;
+            width: 600px;
+            padding: 3px ;
+        
+        }
+
+        header{
+            background-color: plum;
+            padding: 40px 0;
+
+        }
+        /* .konten{
+            border: 3px solid rgb(25, 245, 13);
+        }
+
+        .konten::after{
+            konten : '';
+            float: left;
+            clear: both;
+        } */
+        .sidebar{
+            float: left;
+            width: 40%;
+        }
+        .sidebar aside{
+            background-color: rgb(11, 143, 203);
+            padding: 40px 0;
+        }
+
+        .sidebar nav{
+            background-color: rgb(255, 43, 43);
+            padding: 69px 0;
+        }
+
+        main{
+            background-color: rgb(255, 180, 41);
+            padding: 120px 0;
+            /* width: 60%;
+            box-sizing: border-box;
+            float: right; */
+        }
+
+        footer{
+            background-color: rgb(77, 77, 77);
+            padding: 20px 0;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>Header</header>
+        <div class="konten">
+            <div class="sidebar">
+                <aside>Aside</aside>
+                <nav>Nav</nav>
+            </div>
+            <main>Main</main>
+        </div>
+        <footer>Footer</footer>
+    </div>
+</body>
+</html>

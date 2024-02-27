@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Grid Area CSS Grid</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .container{
+            width: 80%;
+            margin: 50px auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit,1fr);
+            grid-template-areas: 
+            "header header header"
+            "sidebar sidebar sidebar"
+            "content content content"
+            "footer footer footer";
+            
+        }
+
+        .item{
+        width: 100%;
+        background-color: rgb(138, 209, 254);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 100px;
+        box-sizing: border-box;
+        }
+
+        /* .item:nth-child(even){
+            background-color: greenyellow;
+        } */
+
+        .header{
+            background-color: aquamarine;
+            grid-area: header;
+        }
+
+        .content{
+            background-color: rgb(79, 22, 238);
+            grid-area: content;
+        }
+
+        .sidebar{
+            background-color: rgb(194, 33, 173);
+            grid-area: sidebar;
+        }
+
+        .footer{
+            background-color: rgb(250, 56, 102);
+            grid-area: footer;
+        }
+
+        /* Responsive */
+        @media  screen and (min-width : 576px) {
+            .container{
+            display: grid;
+            grid-template-columns: repeat(auto-fit,1fr);
+            grid-template-areas: 
+            "header header header"
+            "sidebar content content"
+            "footer footer footer";
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="item header">Header</div>
+        <div class="item content">Content</div>
+        <div class="item sidebar">Sidebar</div>
+        <div class="item footer">Footer</div>
+        <!-- <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div> -->
+    </div>
+</body>
+</html>

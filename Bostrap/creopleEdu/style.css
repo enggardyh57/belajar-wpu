@@ -1,0 +1,36 @@
+body{
+    height: 2000px;
+}
+.logo {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 5px;
+}
+
+.tagline {
+    margin-left: 90px !important;
+    margin-top: -20px;
+    color: gray;
+}
+
+.klik {
+    margin-top: -5px !important;
+    background-color: #1C3794;
+
+}
+
+.klik:hover {
+    background-color: #4262d5;
+}
+
+.search {
+    width: 300px;
+    background-color: rgb(196, 196, 196);
+}
+
+.beranda{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 50px;
+   
+}
